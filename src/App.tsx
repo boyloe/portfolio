@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <h1>Bryan Oyloe Portfolio Site</h1>
+      <h2>Full Stack Software Engineer</h2>
     </div>
   );
 }
