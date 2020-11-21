@@ -5,8 +5,8 @@ import BryanPic from './assets/BryanNicePhoto.jpg'
 function App() {
   return (
     <div className="flex justify-center py-10">
-      <div className="max-w-md rounded overflow-hidden shadow-lg bg-gray-100">
-        <img className="w-full" src={BryanPic} alt="Bryan" />
+      <div className="max-w-xs rounded overflow-hidden shadow-lg bg-gray-100">
+        <img className="w-full rounded" src={BryanPic} alt="Bryan" />
         <div className="px-6 py-4">
           <div className="font-bold text-blue-500 text-xl mb-2">
             Bryan Oyloe - Full Stack Software Engineer
