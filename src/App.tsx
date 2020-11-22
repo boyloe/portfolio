@@ -1,11 +1,14 @@
 import React from 'react';
 import BryanPic from './assets/BryanNicePhoto.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faDev, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
   return (
-    <div className="flex justify-center py-10">
-      <div className="max-w-xs rounded overflow-hidden shadow-lg bg-gray-100">
+    <div className="flex justify-center py-10 container">
+      <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-gray-100">
         <img className="w-full rounded" src={BryanPic} alt="Bryan" />
         <div className="px-6 py-4">
           <div className="font-bold text-blue-500 text-xl mb-2">
@@ -17,13 +20,19 @@ function App() {
             and Node to design creative solutions for clients. 
           </p>
         </div>
-        <div className="px-6 py-4">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-            #FullStackEngineer
-          </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-            #TypescriptDev
-          </span>
+        <div className="px-6 py-4 flex space-x-8">
+          <a href="https://www.linkedin.com/in/bryan-oyloe">  
+            <FontAwesomeIcon icon={faLinkedin} color='blue' size='3x' />
+          </a>
+          <a href="https://www.github.com/boyloe">  
+            <FontAwesomeIcon icon={faGithubSquare} size='3x'/>
+          </a>
+          <a href="https://www.dev.to/boyloe">  
+            <FontAwesomeIcon icon={faDev} size='3x'/>
+          </a>
+          <a href="mailto:boyloe@gmail.com">  
+            <FontAwesomeIcon icon={faEnvelopeSquare} size='3x' color='red'/>
+          </a>
         </div>
       </div>
     </div>
