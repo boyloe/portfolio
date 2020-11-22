@@ -7,8 +7,8 @@ import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
-    <div className="flex justify-center py-10 container">
-      <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-gray-100">
+    <div className="flex justify-center overflow-hidden py-10 container">
+      <div className="max-w-xs rounded-lg  shadow-lg bg-gray-100">
         <img className="w-full rounded" src={BryanPic} alt="Bryan" />
         <div className="px-6 py-4">
           <div className="font-bold text-blue-500 text-xl mb-2">
