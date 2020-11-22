@@ -1,5 +1,6 @@
 import React from 'react';
 import BryanPic from './assets/BryanNicePhoto.jpg'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faDev, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
@@ -7,8 +8,8 @@ import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
-    <div className="flex justify-center overflow-hidden py-10 ">
-      <div className="max-w-xs rounded-lg  shadow-lg bg-gray-100">
+    <div className="flex justify-center overflow-hidden py-12 bg-gradient-to-br from-white via-gray-200 to-blue-300 w-screen h-screen">
+      <div className="c max-w-xs max-h-72 rounded-lg shadow-lg bg-gray-100">
         <img className="w-full rounded" src={BryanPic} alt="Bryan" />
         <div className="px-6 py-4">
           <h3 className="font-bold text-blue-900 text-2xl ">
