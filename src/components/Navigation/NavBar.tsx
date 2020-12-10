@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const NavBar:React.FC = () => {
     return (
-        <nav>
+        <nav className="bg-gray-800 text-white">
             <Link className="" to='/'>Home</Link>
             <Link className="" to='/projects'>Projects</Link>
             <Link className="" to='/skills'>Skills</Link>
