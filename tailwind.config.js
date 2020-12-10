@@ -1,10 +1,17 @@
+
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      backgroundImage: (theme) => ({
+      'blue-line-wave': "url('/Users/bryanoyloe/ReactApps/portfolio-site/src/assets/images/BlueLineWave.png')",
+      'bw-aggrocrag': "url('./assets/images/B&WAggroCragjpg.jpg')"
+      })
+    },
     screens: {
       sm: '640px',
       md: '768px',

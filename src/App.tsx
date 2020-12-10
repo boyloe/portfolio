@@ -6,7 +6,7 @@ import { HomePage } from './components/HomePage/HomePage'
 
 function App() {
   return (
-      <div className="bg-white bg-auto">
+      <div className="bg-gray-800">
         <NavBar />
         <Switch>
             <Route exact path='/' component={HomePage} />
