@@ -3,7 +3,7 @@ import { ReactTypical } from '@deadcoder0904/react-typical'
 
 export const IntroBox:React.FC = () => {
     return (
-        <div className="h-screen w-96 flex flex-col justify-center items-start">
+        <div className="h-screen w-96 flex flex-col justify-center items-start pb-20">
             <div>
                 <ReactTypical 
                     className="text-3xl py-2 font-tech text-black" 

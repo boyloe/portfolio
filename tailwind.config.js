@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-      'blue-line-wave': "url('/Users/bryanoyloe/ReactApps/portfolio-site/src/assets/images/BlueLineWave.png')",
+      'blue-line-wave': "url('/Users/bryanoyloe/ReactApps/portfolio-site/src/assets/images/BlueLineWaveCompressed.png')",
       'bw-aggrocrag': "url('/Users/bryanoyloe/ReactApps/portfolio-site/src/assets/images/B&WAggroCragjpg.jpg')"
       }),
       fontFamily: {
