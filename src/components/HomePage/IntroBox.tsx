@@ -7,17 +7,17 @@ export const IntroBox:React.FC = () => {
             <div>
                 <ReactTypical 
                     className="text-3xl py-2 font-tech text-black" 
-                    steps={[1000,'Hello,']}
+                    steps={[2500,'Hello,']}
                 />
             </div>
                 <ReactTypical 
                     className="text-3xl py-2 font-tech text-black" 
-                    steps={[3000, 'My Name is Bryan Oyloe.']}
+                    steps={[4000, 'My Name is Bryan Oyloe.']}
                 />
             <div>
                 <ReactTypical 
                     className="text-3xl py-2 font-tech text-black" 
-                    steps={[5000, 'I am a Full Stack Software Engineer.']}
+                    steps={[6000, 'I am a Full Stack Software Engineer.']}
                 />
             </div>
         </div>
