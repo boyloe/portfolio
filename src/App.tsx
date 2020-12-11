@@ -20,6 +20,10 @@ function App() {
               window.location.href = 'https://drive.google.com/file/d/1qdS2r653NMpgAMWgaeCXDqcoXTDLMYxn/view?usp=sharing'
               return null
             }} />
+            <Route exact path='/github' component={() => {
+              window.location.href = 'https://www.github.com/boyloe'
+              return null
+            }} />
             <Route exact path='/contact' component={() => {
               window.location.href = 'mailto:boyloe@gmail.com'
               return null
