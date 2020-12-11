@@ -8,7 +8,7 @@ import { HomePage } from './components/HomePage/HomePage'
 
 function App() {
   return (
-      <div className='bg-gray-200'>
+      <div className='bg-gray-300'>
         <NavBar />
         <Switch>
             <Route exact path='/' component={HomePage} />
