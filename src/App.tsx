@@ -1,44 +1,32 @@
 import React from 'react';
-import BryanPic from './assets/BryanNicePhoto.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faDev, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
+import { NavBar } from './components/Navigation/NavBar';
+import { Switch, Route } from 'react-router-dom'
+import { HomePage } from './components/HomePage/HomePage'
+// import { ResumePage } from './components/ResumePage/ResumePage';
+
+
 
 function App() {
   return (
-    <div className="flex justify-center overflow-hidden py-12 bg-gradient-to-tl from-white via-gray-200 to-blue-300 h-screen">
-      <div className="max-w-sm rounded-xl shadow-lg bg-gray-100">
-        <img className="w-full rounded-xl" src={BryanPic} alt="Bryan" />
-        <div className="px-2 py-4">
-          <div className="font-bold text-blue-900 text-2xl ">
-            Bryan Oyloe
-          </div>
-          <h5 className="font-bold text-blue-800 text-sm mb-4">
-            Full Stack Software Engineer
-          </h5>
-          <p className="text-blue-900 text-base">
-            Full Stack Software engineer with a 9+ year background in Petroleum Engineering. 
-            Passionate about using my skills in React, React Native, Ruby, Rails, 
-            and Node to design creative solutions for my clients. 
-          </p>
-        </div>
-        <div className="px-6 py-4 flex space-x-8">
-          <a href="https://www.linkedin.com/in/bryan-oyloe">  
-            <FontAwesomeIcon icon={faLinkedin} color='blue' size='3x' />
-          </a>
-          <a href="https://www.github.com/boyloe">  
-            <FontAwesomeIcon icon={faGithubSquare} size='3x'/>
-          </a>
-          <a href="https://www.dev.to/boyloe">  
-            <FontAwesomeIcon icon={faDev} size='3x'/>
-          </a>
-          <a href="mailto:boyloe@gmail.com">  
-            <FontAwesomeIcon icon={faEnvelopeSquare} size='3x' color='red'/>
-          </a>
-        </div>
-      </div>
+      <div className='bg-gray-200'>
+        <NavBar />
+        <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route exact path='/projects' component={() => {
+              window.location.href = 'https://www.github.com/boyloe'
+              return null
+            }} />
+            <Route exact path='/resume' component={() => {
+              window.location.href = 'https://drive.google.com/file/d/1qdS2r653NMpgAMWgaeCXDqcoXTDLMYxn/view?usp=sharing'
+              return null
+            }} />
+            <Route exact path='/contact' component={() => {
+              window.location.href = 'mailto:boyloe@gmail.com'
+              return null
+            }} />
+        </Switch>
     </div>
-  );
+    );
 }
 
 export default App;

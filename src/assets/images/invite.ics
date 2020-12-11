@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20201216T200000Z
+DTEND:20201216T203000Z
+DTSTAMP:20201209T165751Z
+ORGANIZER;CN=ellen.chang@flatironschool.com:mailto:ellen.chang@flatironscho
+ ol.com
+UID:7shrk7pscau5p7ifmlht20k4vh@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=ellen.chang@flatironschool.com;X-NUM-GUESTS=0:mailto:ellen.chang@flatir
+ onschool.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=boyloe@gmail.com;X-NUM-GUESTS=0:mailto:boyloe@gmail.com
+X-MICROSOFT-CDO-OWNERAPPTID:1228518920
+CREATED:20201209T165748Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nPlease do not edit this section of the descriptio
+ n.\n\nJoin Zoom Meeting\nhttps://flatironschool.zoom.us/j/91362538988?pwd=N
+ 2wrUVNyTTJDdVFNNm82NnFycTFZZz09 (ID: 91362538988\, password: 709896)\n\nJoi
+ n by phone\n(US) +1 646-558-8656 (passcode: 709896)\n\nJoining instructions
+ : https://www.google.com/url?q=https://applications.zoom.us/addon/invitatio
+ n/detail?meetingUuid%3DgzxeDXsoRBKAtUmbRPMEjg%253D%253D%26signature%3D89ff7
+ 4f1ac915f203fc53c0c669b0ad876d558cf464375fe7a41de4f8253887a&sa=D&source=cal
+ endar&usg=AOvVaw0Db5MjjkrAVq4RDxjISU88\n\nPasscode: 709896\n\nView your eve
+ nt at https://calendar.google.com/calendar/event?action=VIEW&eid=N3Nocms3cH
+ NjYXU1cDdpZm1saHQyMGs0dmggYm95bG9lQG0&tok=MzAjZWxsZW4uY2hhbmdAZmxhdGlyb25zY
+ 2hvb2wuY29tZmViYzNjODhhNDFmZTkzNDdhYTgwY2NiYWNjNDM5NGEyZjkxY2IxMA&ctz=Ameri
+ ca%2FDenver&hl=en&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20201209T165749Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Bryan/Ellen (Check-in)
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
