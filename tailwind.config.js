@@ -9,8 +9,11 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
       'blue-line-wave': "url('/Users/bryanoyloe/ReactApps/portfolio-site/src/assets/images/BlueLineWave.png')",
-      'bw-aggrocrag': "url('./assets/images/B&WAggroCragjpg.jpg')"
-      })
+      'bw-aggrocrag': "url('/Users/bryanoyloe/ReactApps/portfolio-site/src/assets/images/B&WAggroCragjpg.jpg')"
+      }),
+      fontFamily: {
+        'tech': ["'share tech mono', sans-serif"]
+      }
     },
     screens: {
       sm: '640px',
