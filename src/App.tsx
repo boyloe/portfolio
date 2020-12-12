@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavBar } from './components/Navigation/NavBar'; 
 import { Switch, Route } from 'react-router-dom'
 import { HomePage } from './components/HomePage/HomePage'
@@ -8,6 +8,14 @@ import { ProjectPage } from './components/ProjectPage/ProjectPage';
 
 
 function App() {
+
+  useEffect(() => {
+    fetch("https://dev.to/api/articles/me", {
+      headers: {
+        "Api-Key": "API_KEY"
+      }
+    }))
+  },[])
   return (
       <div className='bg-gray-300'>
         <NavBar />
