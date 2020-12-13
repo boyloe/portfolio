@@ -5,17 +5,13 @@ import { HomePage } from './components/HomePage/HomePage'
 import { ProjectPage } from './components/ProjectPage/ProjectPage';
 // import { ResumePage } from './components/ResumePage/ResumePage';
 
-
-
+const baseURL = `http://www.localhost:4000`
 function App() {
-
   useEffect(() => {
-    fetch("https://dev.to/api/articles/me", {
-      headers: {
-        "Api-Key": "API_KEY"
-      }
-    }))
-  },[])
+    fetch(`${baseURL}`)
+      .then(response => response.json())
+      .then(console.log)
+  }, [])
   return (
       <div className='bg-gray-300'>
         <NavBar />
