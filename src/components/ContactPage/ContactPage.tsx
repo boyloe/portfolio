@@ -70,7 +70,7 @@ export const ContactPage:React.FC = () => {
                         type="text" 
                     />
                     <Field 
-                        className="border-2 border-gray-600 rounded-lg block w-full h-1/4 mt-3" 
+                        className="border-2 border-gray-600 rounded-lg block w-full h-1/4 mt-3 p-2" 
                         id="comments" 
                         name="comments" 
                         as="textarea"
