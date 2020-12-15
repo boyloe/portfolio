@@ -3,6 +3,7 @@ import { NavBar } from './components/Navigation/NavBar';
 import { Switch, Route } from 'react-router-dom'
 import { HomePage } from './components/HomePage/HomePage'
 import { ProjectPage } from './components/ProjectPage/ProjectPage';
+import { ContactPage } from './components/ContactPage/ContactPage';
 // import { ResumePage } from './components/ResumePage/ResumePage';
 
 const baseURL = `http://www.localhost:4000`
@@ -22,10 +23,7 @@ function App() {
               window.location.href = 'https://drive.google.com/file/d/1qdS2r653NMpgAMWgaeCXDqcoXTDLMYxn/view?usp=sharing'
               return null
             }} />
-            <Route exact path='/contact' component={() => {
-              window.location.href = 'mailto:boyloe@gmail.com'
-              return null
-            }} />
+            <Route exact path='/contact' component={ContactPage} />
         </Switch>
     </div>
     );
