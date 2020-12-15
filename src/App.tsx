@@ -6,7 +6,7 @@ import { ProjectPage } from './components/ProjectPage/ProjectPage';
 import { ContactPage } from './components/ContactPage/ContactPage';
 // import { ResumePage } from './components/ResumePage/ResumePage';
 
-const baseURL = `http://www.localhost:4000`
+// const baseURL = `http://www.localhost:4000`
 function App() {
   // useEffect(() => {
   //   fetch(`${baseURL}`)
