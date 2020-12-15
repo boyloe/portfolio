@@ -39,38 +39,38 @@ export const ContactPage:React.FC = () => {
             }
             >
                 <Form className="p-6 my-10">
-                    <p className="text-2xl text-gray-700">Contact Me!</p>
+                    <p className="text-3xl text-gray-700">Contact Me!</p>
                     <div className="flex space-x-5 mt-3">
                         <Field 
-                            className="border p-2 w-1/2 rounded-lg" 
+                            className="border-2 border-gray-600 p-2 w-1/2 rounded-lg" 
                             id="firstName" 
                             name="firstName" 
                             type="text" 
                             placeholder="First Name" 
                         />
-                        <Field 
-                            className="border rounded-lg p-2 w-1/2" 
+                        <Field              
+                            className="border-2 border-gray-600 rounded-lg p-2 w-1/2" 
                             id="lastName" 
                             name="lastName" 
                             placeholder="Last Name" 
                         />
                     </div>
                     <Field 
-                        className="border rounded-lg block w-full p-2 mt-3"
+                        className="border-2 border-gray-600 rounded-lg block w-full p-2 mt-3"
                         id="email" 
                         name="email" 
                         placeholder="Your Email" 
                         type="email" 
                     />
                     <Field 
-                        className="border rounded-lg block w-full p-2 mt-3"
+                        className="border-2 border-gray-600 rounded-lg block w-full p-2 mt-3"
                         id="subject" 
                         name="subject" 
                         placeholder="Subject" 
                         type="text" 
                     />
                     <Field 
-                        className="border rounded-lg block w-full h-1/4 mt-3" 
+                        className="border-2 border-gray-600 rounded-lg block w-full h-1/4 mt-3" 
                         id="comments" 
                         name="comments" 
                         as="textarea"
@@ -78,7 +78,7 @@ export const ContactPage:React.FC = () => {
                     />
                     <div className="flex justify-end" >
                         <button 
-                            className="border rounded-lg p-2 bg-gray-400 mt-2 w-full ju" 
+                            className="border-2 border-gray-600 rounded-lg p-2 bg-gray-400 mt-2 w-full" 
                             type="submit"
                         >
                             Submit
