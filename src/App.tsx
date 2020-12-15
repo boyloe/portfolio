@@ -7,11 +7,11 @@ import { ProjectPage } from './components/ProjectPage/ProjectPage';
 
 const baseURL = `http://www.localhost:4000`
 function App() {
-  useEffect(() => {
-    fetch(`${baseURL}`)
-      .then(response => response.json())
-      .then(console.log)
-  }, [])
+  // useEffect(() => {
+  //   fetch(`${baseURL}`)
+  //     .then(response => response.json())
+  //     .then(console.log)
+  // }, [])
   return (
       <div className='bg-gray-300'>
         <NavBar />
