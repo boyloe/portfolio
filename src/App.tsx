@@ -18,7 +18,10 @@ function App() {
         <NavBar />
         <Switch>
             <Route exact path='/' component={HomePage} />
-            <Route exact path='/projects' component={ProjectPage} />
+            <Route exact path='/projects' component={() => {
+              window.location.href = 'https://www.github.com/boyloe'
+              return null
+            }} />
             <Route exact path='/resume' component={() => {
               window.location.href = 'https://drive.google.com/file/d/1qdS2r653NMpgAMWgaeCXDqcoXTDLMYxn/view?usp=sharing'
               return null
