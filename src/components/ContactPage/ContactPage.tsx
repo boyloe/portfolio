@@ -1,5 +1,6 @@
 import React from 'react'
 import { Formik, Field, Form, FormikHelpers} from 'formik'
+import { formatClassNames } from '../formatClassNames'
 
 interface formValues {
     firstName:string;
@@ -42,35 +43,77 @@ export const ContactPage:React.FC = () => {
                     <p className="text-3xl text-gray-700">Contact Me!</p>
                     <div className="flex space-x-5 mt-3">
                         <Field 
-                            className="border-2 border-gray-600 p-2 w-1/2 rounded-lg" 
+                            className={formatClassNames(
+                                "border-2", 
+                                "border-gray-200", 
+                                "outline-none", 
+                                "focus:border-gray-500", 
+                                "p-2 w-1/2", 
+                                "rounded-lg"
+                            )} 
                             id="firstName" 
                             name="firstName" 
                             type="text" 
                             placeholder="First Name" 
                         />
                         <Field              
-                            className="border-2 border-gray-600 rounded-lg p-2 w-1/2" 
+                            className={formatClassNames(
+                                "border-2",
+                                "outline-none", 
+                                "focus:border-gray-500", 
+                                "border-gray-200", 
+                                "rounded-lg", 
+                                "p-2 w-1/2"
+                            )}
                             id="lastName" 
                             name="lastName" 
                             placeholder="Last Name" 
                         />
                     </div>
                     <Field 
-                        className="border-2 border-gray-600 rounded-lg block w-full p-2 mt-3"
+                        className={formatClassNames(
+                            "border-2", 
+                            "outline-none", 
+                            "focus:border-gray-500", 
+                            "border-gray-200", 
+                            "rounded-lg", 
+                            "block", 
+                            "w-full", 
+                            "p-2 mt-3"
+                        )}
                         id="email" 
                         name="email" 
                         placeholder="Your Email" 
                         type="email" 
                     />
                     <Field 
-                        className="border-2 border-gray-600 rounded-lg block w-full p-2 mt-3"
+                        className={formatClassNames(
+                            "border-2", 
+                            "outline-none", 
+                            "focus:border-gray-500", 
+                            "border-gray-200", 
+                            "rounded-lg", 
+                            "block", 
+                            "w-full", 
+                            "p-2 mt-3"
+                        )}
                         id="subject" 
                         name="subject" 
                         placeholder="Subject" 
                         type="text" 
                     />
                     <Field 
-                        className="border-2 border-gray-600 rounded-lg block w-full h-1/4 mt-3 p-2" 
+                        className={formatClassNames(
+                            "border-2", 
+                            "outline-none", 
+                            "focus:border-gray-500", 
+                            "border-gray-200", 
+                            "rounded-lg", 
+                            "block", 
+                            "w-full", 
+                            "h-1/4", 
+                            "mt-3 p-2"
+                        )}
                         id="comments" 
                         name="comments" 
                         as="textarea"
@@ -78,7 +121,22 @@ export const ContactPage:React.FC = () => {
                     />
                     <div className="flex justify-end" >
                         <button 
-                            className="border-2 border-gray-600 rounded-lg p-2 bg-gray-400 mt-2 w-full transition duration-400 ease-in-out hover:bg-blue-400 transform hover:-translate-y-1 hover:scale-105" 
+                            className={formatClassNames(
+                                "border-2", 
+                                "border-gray-600", 
+                                "rounded-lg", 
+                                "p-2", 
+                                "bg-gray-400", 
+                                "mt-2", 
+                                "w-full", 
+                                "transition", 
+                                "duration-400", 
+                                "ease-in-out", 
+                                "hover:bg-gray-500", 
+                                "transform", 
+                                "hover:-translate-y-1", 
+                                "hover:scale-105"
+                            )}
                             type="submit"
                         >
                             Submit
