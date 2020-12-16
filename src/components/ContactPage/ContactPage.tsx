@@ -78,7 +78,7 @@ export const ContactPage:React.FC = () => {
                     />
                     <div className="flex justify-end" >
                         <button 
-                            className="border-2 border-gray-600 rounded-lg p-2 bg-gray-400 mt-2 w-full" 
+                            className="border-2 border-gray-600 rounded-lg p-2 bg-gray-400 mt-2 w-full transition duration-400 ease-in-out hover:bg-blue-400 transform hover:-translate-y-1 hover:scale-105" 
                             type="submit"
                         >
                             Submit
