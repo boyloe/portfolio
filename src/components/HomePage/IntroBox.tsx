@@ -3,8 +3,8 @@ import { ReactTypical } from '@deadcoder0904/react-typical'
 
 export const IntroBox:React.FC = () => {
     return (
-        <div className="h-screen w-96 flex flex-col justify-center items-start pb-20">
-            <div>
+        <div className="h-1/3 w-96 flex flex-col justify-center px-6 mt-10">
+            <div className="">
                 <ReactTypical 
                     className="text-3xl py-2 font-tech text-black" 
                     steps={[2000,'Hello,']}
