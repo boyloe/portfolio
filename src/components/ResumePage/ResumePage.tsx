@@ -1,11 +1,17 @@
 import React from 'react' 
+import { Worker, Viewer } from '@react-pdf-viewer/core';
+
+
+
+
+
 
 export const ResumePage:React.FC = () => {
+
+
     return (
-        <div>
-            <a href="https://drive.google.com/file/d/1qdS2r653NMpgAMWgaeCXDqcoXTDLMYxn/view?usp=sharing" >
-                <img src="https://drive.google.com/file/d/1qdS2r653NMpgAMWgaeCXDqcoXTDLMYxn/view?usp=sharing" alt="resume" />
-            </a>
-        </div>
+    <div className="h-screen bg-blue-line-wave bg-cover flex justify-center">
+
+    </div>
     )
 }

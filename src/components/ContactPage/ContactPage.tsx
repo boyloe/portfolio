@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Formik, Field, Form, FormikHelpers} from 'formik'
 import { formatClassNames } from '../formatClassNames'
 
@@ -12,6 +12,7 @@ interface formValues {
 
 
 export const ContactPage:React.FC = () => {
+    const [isClicked, setIsClicked] = useState(false)
     return (
         <div className="h-screen bg-blue-line-wave bg-cover flex justify-center">
             <Formik
@@ -24,9 +25,8 @@ export const ContactPage:React.FC = () => {
                 }}
                 onSubmit={(
                     values:formValues,
-                    { setSubmitting, resetForm }:FormikHelpers<formValues> 
+                    { resetForm }:FormikHelpers<formValues> 
                 ) => {
-                    console.log(values)
                     fetch("https://formspree.io/f/mrgoydgj", {
                         method: "POST",
                         headers: {
@@ -138,8 +138,9 @@ export const ContactPage:React.FC = () => {
                                 "hover:scale-105"
                             )}
                             type="submit"
+
                         >
-                            Submit
+                            submit
                         </button>
                     </div>
                 </Form>
