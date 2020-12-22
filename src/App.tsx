@@ -5,6 +5,7 @@ import { HomePage } from './components/HomePage/HomePage'
 import { ContactPage } from './components/ContactPage/ContactPage';
 import { ResumePage } from './components/ResumePage/ResumePage';
 
+
 function App() {
   return (
       <div className='bg-gray-300'>

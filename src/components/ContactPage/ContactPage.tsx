@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Formik, Field, Form, FormikHelpers} from 'formik'
 import { formatClassNames } from '../formatClassNames'
 
@@ -12,7 +12,6 @@ interface formValues {
 
 
 export const ContactPage:React.FC = () => {
-    const [isClicked, setIsClicked] = useState(false)
     return (
         <div className="h-screen bg-blue-line-wave bg-cover flex justify-center">
             <Formik

@@ -1,15 +1,113 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React,{useState} from 'react'
+import { NavLink } from 'react-router-dom'
+import { ImHome } from 'react-icons/im'
+import { formatClassNames } from '../formatClassNames'
+import { AiFillGithub } from 'react-icons/ai'
+import { IoIosPaper } from 'react-icons/io'
+import { GrContact } from 'react-icons/gr'
 
 export const NavBar:React.FC = () => {
+    const [isShown, setisShown] = useState(false)
     return (
-        <div>
-            <nav className="bg-gray-300 text-black font-tech flex flex-col w-full md:flex-row py-4 px-3 justify-end min-h-8" >
-                <Link className="px-3 text-2xl mx-3 my-2" to='/'>Home</Link>
-                <Link className="px-3 text-2xl mx-3 my-2" to='/projects'>Projects</Link>
-                <Link className="px-3 text-2xl mx-3 my-2" to='/resume'>Resume</Link>
-                {/* <Link className="px-3 text-2xl mx-2 my-2" to='/blog'>Blog</Link> */}
-                <Link className="px-3 text-2xl mx-3 my-2" to='/contact'>Contact</Link>
+        <div className={formatClassNames(
+            "w-full",
+            "md:w-1/12", 
+            "bg-white", 
+            "px-2 text-center", 
+            "fixed", 
+            "pin-b", 
+            "md:pt-8", 
+            "md:pin-t", 
+            "md:pin-l", 
+            "h-16", 
+            "md:h-screen", 
+            "md:border-r-4", 
+            "md:border-grey-dark"
+            )}
+        >
+            <nav className="md:relative mx-auto lg:px-6" >
+                <ul className="list-reset flex flex-row md:flex-col text-center md:text-left">
+                    <li className="mr-3 flex-1">
+                        <NavLink className={formatClassNames(
+                            "block",
+                            "py-1", 
+                            "md:py-3", 
+                            "pl-1", 
+                            "align-middle", 
+                            "text-grey-darkest", 
+                            "no-underline", 
+                            "hover:text-pink",  
+                            "border-grey-darkest", 
+                            "md:border-black", 
+                            "hover:border-pink"
+                            )} 
+                            to='/'
+                        >
+                            <ImHome className="pr-0" />
+                            Home
+                        </NavLink>                       
+                    </li>                    
+                    <li className="mr-3 flex-1">
+                        <NavLink className={formatClassNames(
+                            "block",
+                            "py-1", 
+                            "md:py-3", 
+                            "pl-1", 
+                            "align-middle", 
+                            "text-grey-darkest", 
+                            "no-underline", 
+                            "hover:text-pink",  
+                            "border-grey-darkest", 
+                            "md:border-black", 
+                            "hover:border-pink"
+                            )} 
+                            to='/projects'
+                        >
+                            <AiFillGithub className="pr-0" />
+                            GitHub
+                        </NavLink>                       
+                    </li>                    
+                    <li className="mr-3 flex-1">
+                        <NavLink className={formatClassNames(
+                            "block",
+                            "py-1", 
+                            "md:py-3", 
+                            "pl-1", 
+                            "align-middle", 
+                            "text-grey-darkest", 
+                            "no-underline", 
+                            "hover:text-pink", 
+                            "border-grey-darkest", 
+                            "md:border-black", 
+                            "hover:border-pink"
+                            )} 
+                            to='/resume'
+                        >
+                            <IoIosPaper className="pr-0" />
+                            Resume
+                        </NavLink>                       
+                    </li>                    
+                    <li className="mr-3 flex-1">
+                        <NavLink className={formatClassNames(
+                            "block",
+                            "py-1", 
+                            "md:py-3", 
+                            "pl-1", 
+                            "align-middle", 
+                            "text-grey-darkest", 
+                            "no-underline", 
+                            "hover:text-pink",
+                            "border-grey-darkest", 
+                            "md:border-black", 
+                            "hover:border-pink"
+                            )} 
+                            to='/contact'
+                        >
+                            <GrContact className="pr-0" />
+                            Contact
+                        </NavLink>                       
+                    </li>                    
+                </ul>
             </nav>            
         </div>
     )
