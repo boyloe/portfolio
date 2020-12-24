@@ -12,7 +12,7 @@ export const NavBar:React.FC = () => {
         <div className={formatClassNames(
             "w-full",
             "md:w-1/12", 
-            "bg-gray-400", 
+            "bg-gray-300", 
             "px-2 text-center", 
             "fixed", 
             "pin-b", 
