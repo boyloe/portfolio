@@ -7,7 +7,7 @@ import { IoIosPaper } from 'react-icons/io'
 import { GrContact } from 'react-icons/gr'
 
 export const NavBar:React.FC = () => {
-    const [isShown, setisShown] = useState(false)
+    // const [isShown, setisShown] = useState(false)
     return (
         <div className={formatClassNames(
             "w-full",
@@ -21,7 +21,7 @@ export const NavBar:React.FC = () => {
             "md:pin-l", 
             "h-16", 
             "md:h-screen", 
-            // "md:border-r-4", 
+            "md:border-r-2", 
             "md:border-grey-dark"
             )}
         >
