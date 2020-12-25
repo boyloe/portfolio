@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { ImHome } from 'react-icons/im'
 import { formatClassNames } from '../formatClassNames'
@@ -7,7 +7,6 @@ import { IoIosPaper } from 'react-icons/io'
 import { GrContact } from 'react-icons/gr'
 
 export const NavBar:React.FC = () => {
-    // const [isShown, setisShown] = useState(false)
     return (
         <div className={formatClassNames(
             "w-full",
@@ -20,7 +19,6 @@ export const NavBar:React.FC = () => {
             "md:pin-t", 
             "md:pin-l", 
             "h-16", 
-            "hidden",
             "md:h-screen", 
             // "md:border-r-2", 
             "md:border-grey-dark"
