@@ -12,7 +12,7 @@ export const ResumePage:React.FC = () => {
     return (
     <div className="h-screen bg-blue-line-wave bg-cover flex justify-center">
 
-            <iframe title='resume' className="h-1/2" src={Resume}></iframe>            
+            <iframe title='resume' className="h-1/3 transform scale-150" src={Resume}></iframe>            
 
     </div>
     )
