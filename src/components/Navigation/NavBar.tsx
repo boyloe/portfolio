@@ -13,6 +13,7 @@ export const NavBar: React.FC = () => {
         "w-full",
         "md:w-1/12",
         "px-2 text-center",
+        "pt-8",
         "fixed",
         "pin-b",
         "md:pt-8",
@@ -24,9 +25,9 @@ export const NavBar: React.FC = () => {
         "md:border-grey-dark"
       )}
     >
-      <nav className="md:relative mx-auto lg:px-6">
-        <ul className="list-reset flex flex-row md:flex-col text-center md:text-left">
-          <li className="mr-3 flex-1">
+      <nav className="md:relative mx-auto lg:px-6 ">
+        <ul className="list-reset flex flex-row md:flex-col  text-center md:text-left">
+          <li className="mr-3 flex-1 flex items-center">
             <NavLink
               className={formatClassNames(
                 "block",
@@ -47,7 +48,7 @@ export const NavBar: React.FC = () => {
               Home
             </NavLink>
           </li>
-          <li className="mr-3 flex-1">
+          <li className="mr-3 flex-1 flex items-center">
             <NavLink
               className={formatClassNames(
                 "block",
@@ -68,7 +69,7 @@ export const NavBar: React.FC = () => {
               GitHub
             </NavLink>
           </li>
-          <li className="mr-3 flex-1">
+          <li className="mr-3 flex-1 flex items-center">
             <NavLink
               className={formatClassNames(
                 "block",
@@ -89,7 +90,7 @@ export const NavBar: React.FC = () => {
               Resume
             </NavLink>
           </li>
-          <li className="mr-3 flex-1">
+          <li className="mr-3 flex-1 flex items-center">
             <NavLink
               className={formatClassNames(
                 "block",
